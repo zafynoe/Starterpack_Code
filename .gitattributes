@@ -1,0 +1,20 @@
+# Normalisasi line ending supaya repo ini aman dipakai lintas OS.
+* text=auto eol=lf
+
+# Script Windows tetap CRLF
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Script shell & data tetap LF
+*.sh text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.js text eol=lf
+*.py text eol=lf
+
+# Biner
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff2 binary

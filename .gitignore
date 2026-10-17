@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Node
+node_modules/
+
+# Per-machine local config (impeccable detector overrides)
+.impeccable/config.local.json
+
+# Scratch
+*.tmp

@@ -1,0 +1,158 @@
+{
+  "_comment": "Repo asal tiap skill di .agents/skills/. Dipakai untuk update. Dibuat dari ~/.agents/.skill-lock.json (skills CLI, format v3).",
+  "generatedAt": "2026-10-17",
+  "totalSkills": 51,
+  "installAgents": [
+    "cline",
+    "claude-code",
+    "codex",
+    "cursor",
+    "gemini-cli",
+    "github-copilot",
+    "opencode",
+    "antigravity"
+  ],
+  "updateCommand": "npx --yes skills@latest add <repo> -g -y -a cline claude-code codex cursor gemini-cli github-copilot opencode antigravity",
+  "sources": [
+    {
+      "repo": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "license": "MIT",
+      "skills": [
+        "brainstorming",
+        "diagnosing-superpowers",
+        "dispatching-parallel-agents",
+        "executing-plans",
+        "finishing-a-development-branch",
+        "receiving-code-review",
+        "requesting-code-review",
+        "subagent-driven-development",
+        "systematic-debugging",
+        "test-driven-development",
+        "using-git-worktrees",
+        "using-superpowers",
+        "verification-before-completion",
+        "writing-plans",
+        "writing-skills"
+      ]
+    },
+    {
+      "repo": "emilkowalski/skills",
+      "url": "https://github.com/emilkowalski/skills",
+      "license": "MIT",
+      "skills": [
+        "animate",
+        "animate-expo",
+        "animation-performance",
+        "animation-vocabulary",
+        "apple-design",
+        "ask-sonner",
+        "break-ui",
+        "emil-design-eng",
+        "find-animation-opportunities",
+        "improve-animations",
+        "mobile-native",
+        "pick-ui-library",
+        "prototype",
+        "review-animations",
+        "write-swift"
+      ]
+    },
+    {
+      "repo": "coreyhaines31/marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "license": "MIT",
+      "skills": [
+        "ab-testing",
+        "copywriting",
+        "cro",
+        "customer-research",
+        "onboarding",
+        "product-marketing",
+        "signup",
+        "site-architecture"
+      ],
+      "renameMap": {
+        "product-marketing-context": "product-marketing",
+        "form-cro": "cro",
+        "page-cro": "cro",
+        "signup-flow-cro": "signup",
+        "onboarding-cro": "onboarding",
+        "analytics-tracking": "analytics",
+        "pricing-strategy": "pricing",
+        "launch-strategy": "launch",
+        "popup-cro": "popups",
+        "paywall-upgrade-cro": "paywalls",
+        "email-sequence": "emails",
+        "free-tool-strategy": "free-tools",
+        "referral-program": "referrals",
+        "schema-markup": "schema",
+        "competitor-alternatives": "competitors",
+        "paid-ads": "ads",
+        "social-content": "social",
+        "ab-test-setup": "ab-testing",
+        "aso-audit": "aso"
+      }
+    },
+    {
+      "repo": "miqdadbadjuber/anti-slop",
+      "url": "https://github.com/miqdadbadjuber/anti-slop",
+      "license": "MIT",
+      "skills": [
+        "antislop",
+        "antislop-code",
+        "antislop-copywriting",
+        "antislop-human",
+        "antislop-layoutmobile",
+        "antislop-ui"
+      ],
+      "note": "Dipasang lewat installer sendiri: npx antislop-ai (bukan skills CLI). Update: npx antislop-ai --update"
+    },
+    {
+      "repo": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "license": "MIT",
+      "skills": [
+        "grill-me",
+        "grilling",
+        "to-spec"
+      ],
+      "renameMap": {
+        "to-prd": "to-spec"
+      }
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "license": "Apache-2.0",
+      "skills": [
+        "impeccable"
+      ],
+      "note": "Satu skill berisi 24 perintah. Butuh scripts/impeccable.cmd context dijalankan sekali per sesi (Windows)."
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "url": "https://github.com/vercel-labs/agent-skills",
+      "license": "MIT",
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    {
+      "repo": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "license": "Apache-2.0",
+      "skills": [
+        "webapp-testing"
+      ]
+    },
+    {
+      "repo": "vercel-labs/skills",
+      "url": "https://github.com/vercel-labs/skills",
+      "license": "MIT",
+      "skills": [
+        "find-skills"
+      ]
+    }
+  ]
+}
