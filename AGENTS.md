@@ -1,8 +1,8 @@
 # Superpowers
 
 You have **Superpowers** and a wider skill library installed as Cline skills in
-`~/.agents/skills/` (global scope) or `.agents/skills/` (project scope, as in this repo).
-It is a development methodology, not a library: these skills are mandatory workflows, not
+`~/.agents/skills/` (global scope) or `.agents/skills/` (project scope). It is a
+development methodology, not a library: these skills are mandatory workflows, not
 suggestions.
 
 ## Bootstrap
@@ -91,6 +91,44 @@ Notes on phases 3-4:
 - If a phase-3 or phase-4 skill conflicts with `antislop`, `antislop` wins on generic
   AI-slop output; the specific design skill wins on its own domain.
 
+## Design references (award-level work)
+
+The human often supplies references: awwwards.com, godly.website, land-book.com, a live
+site URL, or screenshots. A reference is the brief's visual authority, never decoration.
+
+**How they are handed over (best first):**
+
+1. Screenshots pasted into chat, one per section (hero, grid, footer) — not one long
+   full-page capture.
+2. Files in the project's `references/` folder plus `references.md` (one entry per
+   reference: URL, what to steal, what to reject, the mechanism in one sentence).
+3. The live site's own URL — never the award page. Awwwards/gallery pages are JS-heavy
+   listings that describe a site; they are not the design. Ask for the live URL instead.
+
+**How to consume one:**
+
+1. Read principles, not pixels: grid and asymmetry, type scale and ratio, spacing rhythm,
+   color roles, depth (shadow/blur/layering), motion (what moves, why, how it
+   interrupts), and the one idea that makes the page memorable. Name that idea.
+2. Never copy a reference wholesale. Extract the mechanism, then re-derive it for this
+   project's content, audience, and brand. If the brief pins an aesthetic, the brief wins.
+3. Persist what was learned so later pages match: `references/references.md`, `DESIGN.md`
+   (via `impeccable document` — type scale, spacing, radii, motion curves, color roles),
+   and `.agents/product-marketing.md` for positioning and voice.
+4. Build order for reference-driven work: `impeccable shape` (plan the surface before
+   code) → implement → `impeccable critique` (heuristic review) → `impeccable audit`
+   (a11y/perf/responsive) → `impeccable detect --json` → `impeccable polish`.
+5. Motion taken from a reference: name it with `animation-vocabulary`, build it with
+   `animate`, keep it in the frame budget with `animation-performance`.
+6. Load `antislop` + `antislop-ui` on every reference-driven build. A centered hero,
+   three feature cards, and stock purple gradients are the failure mode here.
+
+Sources worth naming: awwwards.com, godly.website, land-book.com, minimal.gallery,
+siteinspire.com, mobbin.com (mobile), lusion.co — and the live sites behind the awards,
+not the award pages. Note: static HTML/CSS can still reach this level (GSAP, Lenis and
+scroll-driven motion all work from a CDN); there is no installed skill for advanced
+scroll-driven animation, so treat that as manual work.
+
 ## Tool mapping
 
 Superpowers skills are written for Claude Code. Translate tool names to this harness:
@@ -104,7 +142,7 @@ Superpowers skills are written for Claude Code. Translate tool names to this har
 - "TodoWrite" → Cline's plan/todo tracking; if none is available, keep the checklist
   in a markdown file in the project
 
-Skill files live at `.agents/skills/<skill-name>/SKILL.md` in this repo, or
+Skill files live at `.agents/skills/<skill-name>/SKILL.md` in a project, or
 `~/.agents/skills/<skill-name>/SKILL.md` when installed globally, with bundled
 `references/`, `docs/`, `scripts/`, and `templates/` folders next to them.
 
